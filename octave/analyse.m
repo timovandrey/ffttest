@@ -25,7 +25,7 @@ frequencies_read = 0:dF:(Fs/2 + 1);
 
 spectrum = [];
 spectrumFile = strcat(SHARED_DIR, SPECTRUM_FILE);
-spectrumFile = strcat(SHARED_DIR, CHECK_FILE);
+#spectrumFile = strcat(SHARED_DIR, CHECK_FILE);
 fid = fopen(spectrumFile, 'rb');
 N_restored = fread(fid, 1, 'uint16');
 real = fread(fid, N_restored, ACCURACY);

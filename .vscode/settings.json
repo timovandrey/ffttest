@@ -1,5 +1,10 @@
 {
     "files.associations": {
-        "complex.h": "c"
+        "complex.h": "c",
+        "input.h": "c",
+        "main.h": "c",
+        "constants.h": "c",
+        "customtypes.h": "c",
+        "sigproc.h": "c"
     }
 }

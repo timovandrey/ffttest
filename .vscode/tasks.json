@@ -5,11 +5,15 @@
             "label": "C/C++: gcc.exe build active file",
             "command": "C:\\msys64\\mingw64\\bin\\gcc.exe",
             "args": [
+                // https://stackoverflow.com/questions/43365124/get-relative-path-of-the-file-for-tasks-in-vscode?rq=4
+                "-I",
+                "${cwd}",
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "${fileDirname}\\**c", // https://stackoverflow.com/a/57878605
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                //"-H" // To see which includes are included
             ],
             "options": {
                 "cwd": "${fileDirname}"
