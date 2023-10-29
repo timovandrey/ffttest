@@ -1,0 +1,1 @@
+#define SAMPLE_FILE "../shared/signal.bin"
